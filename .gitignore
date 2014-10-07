@@ -52,3 +52,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Removing PyCharm projec files
+.idea/
+.idea/*
