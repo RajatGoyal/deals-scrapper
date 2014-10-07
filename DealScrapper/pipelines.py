@@ -40,4 +40,4 @@ class DumpItemPipeLine(object):
         # cur.execute(command)
         # conn.commit()
         # return item
-        pass
+        return item
