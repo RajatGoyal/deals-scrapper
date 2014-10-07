@@ -7,7 +7,6 @@
 
 import scrapy
 
-
 class ContentItem(scrapy.Item):
     title = scrapy.Field()
     link = scrapy.Field()
