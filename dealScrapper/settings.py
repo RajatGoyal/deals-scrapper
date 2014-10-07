@@ -8,16 +8,16 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #
 
-BOT_NAME = 'dealScrapper'
+BOT_NAME = 'DealScrapper'
 
-SPIDER_MODULES = ['dealScrapper.spiders']
-NEWSPIDER_MODULE = 'dealScrapper.spiders'
+SPIDER_MODULES = ['DealScrapper.spiders']
+NEWSPIDER_MODULE = 'DealScrapper.spiders'
 FEED_FORMAT = 'json'
 FEED_URI = 'file:///test/test.json'
 
 ITEM_PIPELINES = {
-    'dealScrapper.pipelines.CleanItemPipeline': 200,
-    'dealScrapper.pipelines.DumpItemPipeLine': 300
+    'DealScrapper.pipelines.CleanItemPipeline': 200,
+    'DealScrapper.pipelines.DumpItemPipeLine': 300
 }
 #
 

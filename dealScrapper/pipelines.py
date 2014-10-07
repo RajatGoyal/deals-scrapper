@@ -6,7 +6,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import MySQLdb
-from dealScrapper.utils import removeNonAscii
+from DealScrapper.utils import removeNonAscii
 
 class CleanItemPipeline(object):
     def __init__(self):

@@ -1,7 +1,7 @@
 from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.contrib.spiders.crawl import CrawlSpider, Rule
-from dealScrapper.utils import key_lookup
-from dealScrapper.items import ContentItem
+from DealScrapper.utils import key_lookup
+from DealScrapper.items import ContentItem
 
 
 class SaveMoneyIndia(CrawlSpider):
