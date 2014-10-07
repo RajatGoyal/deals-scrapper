@@ -12,8 +12,8 @@ BOT_NAME = 'DealScrapper'
 
 SPIDER_MODULES = ['DealScrapper.spiders']
 NEWSPIDER_MODULE = 'DealScrapper.spiders'
-FEED_FORMAT = 'json'
-FEED_URI = 'file:///test/test.json'
+# FEED_FORMAT = 'json'
+# FEED_URI = 'file:///test/test.json'
 
 ITEM_PIPELINES = {
     'DealScrapper.pipelines.CleanItemPipeline': 200,

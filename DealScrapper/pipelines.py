@@ -31,12 +31,13 @@ class CleanItemPipeline(object):
 class DumpItemPipeLine(object):
 
     def process_item(self, item, spider):
-        conn = MySQLdb.connect(host='127.0.0.1',
-                       user='shopsense',
-                       passwd='captureretail',
-                       db='dealado')
-        cur = conn.cursor()
-        command = """INSERT INTO deals (title, link, description, category, image_url, deal_timestamp, approved) VALUES ("{}","{}","{}","{}","{}","{}",0);""".format(item.get('title', ""), "|||".join(item.get('link', [])), item.get("desc", ""), item.get('category', ""), item.get('image_url', ""), item.get('timestamp', 0), item.get('approved', 0))
-        cur.execute(command)
-        conn.commit()
-        return item
+        # conn = MySQLdb.connect(host='127.0.0.1',
+        #                user='shopsense',
+        #                passwd='captureretail',
+        #                db='dealado')
+        # cur = conn.cursor()
+        # command = """INSERT INTO deals (title, link, description, category, image_url, deal_timestamp, approved) VALUES ("{}","{}","{}","{}","{}","{}",0);""".format(item.get('title', ""), "|||".join(item.get('link', [])), item.get("desc", ""), item.get('category', ""), item.get('image_url', ""), item.get('timestamp', 0), item.get('approved', 0))
+        # cur.execute(command)
+        # conn.commit()
+        # return item
+        pass
